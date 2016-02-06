@@ -26,12 +26,12 @@
               "inputParams": [
                 {
                   "key": "value1",
-                  "type": "string",
+                  "type": "integer",
                   "value": "18"
                 },
                 {
                   "key": "value2",
-                  "type": "string",
+                  "type": "integer",
                   "value": "12"
                 }
               ],
