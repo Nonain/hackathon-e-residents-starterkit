@@ -93,7 +93,7 @@
             "type": "action"
           },
           {
-            "activated": false,
+            "activated": true,
             "metadata": {
               "label": "Part-00153"
             },
@@ -102,40 +102,55 @@
               "inputParams": [
                 {
                   "key": "client_id",
-                  "type": "entityKnowledge",
+                  "type": "globalKnowledge",
                   "value": "client_id"
                 },
                 {
                   "key": "client_secret",
-                  "type": "entityKnowledge",
+                  "type": "globalKnowledge",
                   "value": "client_secret"
                 },
                 {
-                  "key": "name",
-                  "type": "string",
-                  "value": "DIVERS-PART-00153"
-                },
-                {
                   "key": "stream",
-                  "type": "string",
-                  "value": "c4fb67a1-03b2-41e7-a9eb-5491968bab42"
+                  "type": "entityKnowledge",
+                  "value": "part.streams[6]"
                 },
                 {
                   "key": "time",
-                  "type": "integer",
-                  "value": "1412114400000"
+                  "type": "globalKnowledge",
+                  "value": "1447289020000"
                 }
               ],
               "outputParams": [
                 {
-                  "key": "Result",
+                  "key": "data",
                   "type": "entityKnowledge",
-                  "value": "part"
+                  "value": "data"
                 }
               ]
             },
             "children": [],
             "id": "edfbd390-e150-485d-a44d-c2eab60048e7",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "Log",
+              "inputParams": [
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "data"
+                }
+              ],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "c5a918b5-aa28-47ac-8318-995d8dd2b546",
             "type": "action"
           },
           {
