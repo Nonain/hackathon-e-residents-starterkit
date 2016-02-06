@@ -126,7 +126,7 @@
                     },
                     {
                       "key": "time",
-                      "type": "globalKnowledge",
+                      "type": "integer",
                       "value": "1447289020000"
                     }
                   ],
