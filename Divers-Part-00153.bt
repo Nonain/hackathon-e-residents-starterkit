@@ -10,7 +10,7 @@
     "properties": {},
     "children": [
       {
-        "activated": false,
+        "activated": true,
         "metadata": {
           "label": ""
         },
@@ -19,129 +19,27 @@
           {
             "activated": true,
             "metadata": {
-              "label": ""
+              "label": "Somme"
             },
             "properties": {
-              "op1": {
-                "type": "entityKnowledge",
-                "value": " obj"
-              },
-              "op2": {
-                "type": "integer",
-                "value": "100"
-              },
-              "op": ">"
+              "name": "Somme",
+              "inputParams": [
+                {
+                  "key": "value1",
+                  "type": "string",
+                  "value": "18"
+                },
+                {
+                  "key": "value2",
+                  "type": "string",
+                  "value": "12"
+                }
+              ],
+              "outputParams": []
             },
             "children": [],
-            "id": "4f08e45a-e6af-4e08-9f1a-c33aba6c6dc7",
-            "type": "condition"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {
-              "statusCondition": "failsIfAnyFails",
-              "retryPolicy": "propagateToRunning"
-            },
-            "children": [
-              {
-                "activated": true,
-                "metadata": {
-                  "label": "objOut"
-                },
-                "properties": {
-                  "name": "Log",
-                  "inputParams": [
-                    {
-                      "key": "message",
-                      "type": "string",
-                      "value": "Alerte Objectif depasse, mise à jour de l'objectif pour les jours à venir"
-                    }
-                  ],
-                  "outputParams": []
-                },
-                "children": [],
-                "id": "05b3e4f5-a5fd-4d3e-b1c5-ec2907676053",
-                "type": "action"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "channel": {
-                    "type": "string",
-                    "value": ""
-                  },
-                  "inputParams": []
-                },
-                "children": [],
-                "id": "48f6a2be-49ea-4410-9519-1d79a22fdd76",
-                "type": "sendMessage"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": "NewObj"
-                },
-                "properties": {
-                  "name": "CalculNewObj",
-                  "inputParams": [
-                    {
-                      "key": "obj",
-                      "type": "integer",
-                      "value": "0"
-                    },
-                    {
-                      "key": "dayLeft",
-                      "type": "integer",
-                      "value": "0"
-                    }
-                  ],
-                  "outputParams": [
-                    {
-                      "key": "reductObj",
-                      "type": "entityKnowledge",
-                      "value": "reductObj"
-                    }
-                  ]
-                },
-                "children": [],
-                "id": "ecd7f8ce-9408-4eef-9950-7b99ad496474",
-                "type": "action"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": "reductObj"
-                },
-                "properties": {
-                  "name": "",
-                  "inputParams": [
-                    {
-                      "key": "reductObj",
-                      "type": "integer",
-                      "value": "0"
-                    }
-                  ],
-                  "outputParams": [
-                    {
-                      "key": "objDplusUn",
-                      "type": "entityKnowledge",
-                      "value": ""
-                    }
-                  ]
-                },
-                "children": [],
-                "id": "c27a72a9-8c2d-4c7a-96a2-77b95e3c01b5",
-                "type": "action"
-              }
-            ],
-            "id": "4bea5090-30b0-49ae-8dd4-929a20c4cda3",
-            "type": "parallel"
+            "id": "6ab111d0-04be-4123-8d58-93d180c4cc83",
+            "type": "action"
           }
         ],
         "id": "e17b573d-5bd9-47f4-a420-e89d7cc0910d",
