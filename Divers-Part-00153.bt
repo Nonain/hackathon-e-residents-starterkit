@@ -24,11 +24,11 @@
             "properties": {
               "op1": {
                 "type": "entityKnowledge",
-                "value": " val"
+                "value": " obj"
               },
               "op2": {
                 "type": "integer",
-                "value": "25"
+                "value": "100"
               },
               "op": ">"
             },
@@ -49,12 +49,18 @@
               {
                 "activated": true,
                 "metadata": {
-                  "label": "trigger alert"
+                  "label": "objOut"
                 },
                 "properties": {
-                  "name": "",
+                  "name": "Log",
                   "inputParams": [],
-                  "outputParams": []
+                  "outputParams": [
+                    {
+                      "key": "message",
+                      "type": "entityKnowledge",
+                      "value": ""
+                    }
+                  ]
                 },
                 "children": [],
                 "id": "05b3e4f5-a5fd-4d3e-b1c5-ec2907676053",
@@ -63,18 +69,16 @@
               {
                 "activated": true,
                 "metadata": {
-                  "label": "watch"
+                  "label": "NewObj"
                 },
                 "properties": {
-                  "behavior": {
-                    "type": "uriPath",
-                    "value": ""
-                  },
-                  "inputParams": []
+                  "name": "",
+                  "inputParams": [],
+                  "outputParams": []
                 },
                 "children": [],
-                "id": "56e9859f-d587-461e-88cf-6c0cf5692207",
-                "type": "embedded"
+                "id": "ecd7f8ce-9408-4eef-9950-7b99ad496474",
+                "type": "action"
               }
             ],
             "id": "4bea5090-30b0-49ae-8dd4-929a20c4cda3",
