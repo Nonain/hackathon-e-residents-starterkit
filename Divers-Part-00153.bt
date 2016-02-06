@@ -39,7 +39,13 @@
                   "value": "DIVERS-PART-00153"
                 }
               ],
-              "outputParams": []
+              "outputParams": [
+                {
+                  "key": "Result",
+                  "type": "entityKnowledge",
+                  "value": "part"
+                }
+              ]
             },
             "children": [],
             "id": "edfbd390-e150-485d-a44d-c2eab60048e7",
