@@ -40,6 +40,20 @@
             "children": [],
             "id": "6ab111d0-04be-4123-8d58-93d180c4cc83",
             "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "Stall",
+              "inputParams": [],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "8227d80c-d1c4-4987-911a-de5c478c95bc",
+            "type": "action"
           }
         ],
         "id": "e17b573d-5bd9-47f4-a420-e89d7cc0910d",
@@ -250,20 +264,6 @@
             },
             "children": [],
             "id": "f59515f1-286f-4347-b1c0-4a05f41e40f5",
-            "type": "action"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {
-              "name": "Stall",
-              "inputParams": [],
-              "outputParams": []
-            },
-            "children": [],
-            "id": "8227d80c-d1c4-4987-911a-de5c478c95bc",
             "type": "action"
           }
         ],
