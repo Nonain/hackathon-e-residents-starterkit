@@ -31,8 +31,12 @@
                 },
                 {
                   "key": "client_secret",
-                  "type": "string",
+                  "type": "entityKnowledge",
                   "value": "client_secret"
+                },
+                {
+                  "type": "string",
+                  "value": "DIVERS-PART-00153"
                 }
               ],
               "outputParams": []
