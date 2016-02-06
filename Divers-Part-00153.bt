@@ -137,6 +137,20 @@
             "children": [],
             "id": "edfbd390-e150-485d-a44d-c2eab60048e7",
             "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "Stall",
+              "inputParams": [],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "3836424e-5dd0-4020-ad58-d4823c365d12",
+            "type": "action"
           }
         ],
         "id": "9672f81d-3582-41c0-bd8b-d80be6579932",
