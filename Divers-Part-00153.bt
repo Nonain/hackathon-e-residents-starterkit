@@ -22,7 +22,7 @@
               "label": "Part-00153"
             },
             "properties": {
-              "name": "recupData",
+              "name": "IntentGetStreamData",
               "inputParams": [
                 {
                   "key": "client_id",
