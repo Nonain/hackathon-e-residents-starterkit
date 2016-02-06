@@ -122,7 +122,7 @@
                     {
                       "key": "stream",
                       "type": "entityKnowledge",
-                      "value": "part.streams[6]"
+                      "value": "part.streams[0]"
                     },
                     {
                       "key": "time",
