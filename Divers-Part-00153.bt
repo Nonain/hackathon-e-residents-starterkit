@@ -22,16 +22,36 @@
               "label": ""
             },
             "properties": {
+              "name": "Log",
+              "inputParams": [
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "started"
+                }
+              ],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "90e9b64c-4b62-4bd9-9d48-24fb6801087d",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
               "name": "IntentGetPartsStream",
               "inputParams": [
                 {
                   "key": "client_id",
-                  "type": "entityKnowledge",
+                  "type": "globalKnowledge",
                   "value": "client_id"
                 },
                 {
                   "key": "client_secret",
-                  "type": "entityKnowledge",
+                  "type": "globalKnowledge",
                   "value": "client_secret"
                 },
                 {
