@@ -8,7 +8,38 @@
       "label": ""
     },
     "properties": {},
-    "children": [],
+    "children": [
+      {
+        "activated": true,
+        "metadata": {
+          "label": "Recup data"
+        },
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": "Part-00153"
+            },
+            "properties": {
+              "name": "Récup data",
+              "inputParams": [
+                {
+                  "type": "entityKnowledge",
+                  "value": ""
+                }
+              ],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "edfbd390-e150-485d-a44d-c2eab60048e7",
+            "type": "action"
+          }
+        ],
+        "id": "9672f81d-3582-41c0-bd8b-d80be6579932",
+        "type": "sequence"
+      }
+    ],
     "id": "0d3008d8-ccb0-4974-b565-5910a2aac12d"
   }
 ]
