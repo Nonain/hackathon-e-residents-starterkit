@@ -25,8 +25,14 @@
               "name": "Récup data",
               "inputParams": [
                 {
+                  "key": "client_id",
                   "type": "entityKnowledge",
-                  "value": ""
+                  "value": "client_id"
+                },
+                {
+                  "key": "client_secret",
+                  "type": "string",
+                  "value": "client_secret"
                 }
               ],
               "outputParams": []
