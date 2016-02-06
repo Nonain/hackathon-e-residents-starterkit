@@ -14,17 +14,163 @@
         "metadata": {
           "label": ""
         },
+        "properties": {},
+        "children": [
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "op1": {
+                "type": "entityKnowledge",
+                "value": " val"
+              },
+              "op2": {
+                "type": "integer",
+                "value": "25"
+              },
+              "op": ">"
+            },
+            "children": [],
+            "id": "4f08e45a-e6af-4e08-9f1a-c33aba6c6dc7",
+            "type": "condition"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "statusCondition": "failsIfAnyFails",
+              "retryPolicy": "propagateToRunning"
+            },
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": "trigger alert"
+                },
+                "properties": {
+                  "name": "",
+                  "inputParams": [],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "05b3e4f5-a5fd-4d3e-b1c5-ec2907676053",
+                "type": "action"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "active": "false"
+                },
+                "children": [
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": "turnoff"
+                    },
+                    "properties": {
+                      "name": "",
+                      "inputParams": [],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "803f878e-7ae7-4fc8-9029-19fa450df8a3",
+                    "type": "action"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": ""
+                    },
+                    "properties": {
+                      "name": "",
+                      "inputParams": [],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "b05b2232-11f1-4da7-850f-e06562d8a89d",
+                    "type": "action"
+                  },
+                  {
+                    "activated": true,
+                    "metadata": {
+                      "label": "warn user"
+                    },
+                    "properties": {
+                      "name": "",
+                      "inputParams": [],
+                      "outputParams": []
+                    },
+                    "children": [],
+                    "id": "6d9ee8e5-4ed2-4fa0-947e-68445c18e51a",
+                    "type": "action"
+                  }
+                ],
+                "id": "b02832da-1071-42c9-ba7f-6bd87748ed80",
+                "type": "priority"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": "watch"
+                },
+                "properties": {
+                  "behavior": {
+                    "type": "uriPath",
+                    "value": ""
+                  },
+                  "inputParams": []
+                },
+                "children": [],
+                "id": "56e9859f-d587-461e-88cf-6c0cf5692207",
+                "type": "embedded"
+              }
+            ],
+            "id": "4bea5090-30b0-49ae-8dd4-929a20c4cda3",
+            "type": "parallel"
+          }
+        ],
+        "id": "e17b573d-5bd9-47f4-a420-e89d7cc0910d",
+        "type": "sequence"
+      },
+      {
+        "activated": false,
+        "metadata": {
+          "label": ""
+        },
         "properties": {
           "active": "false"
         },
         "children": [
           {
-            "activated": true,
+            "activated": false,
             "metadata": {
               "label": "Recup data"
             },
             "properties": {},
             "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "destination": "timestamp",
+                  "op": {
+                    "type": "integer",
+                    "value": "1420085280000"
+                  }
+                },
+                "children": [],
+                "id": "8f43e0f1-1f4d-4da1-b956-64d58ca4d48d",
+                "type": "set"
+              },
               {
                 "activated": true,
                 "metadata": {
@@ -126,8 +272,8 @@
                     },
                     {
                       "key": "time",
-                      "type": "integer",
-                      "value": "1420085280000"
+                      "type": "entityKnowledge",
+                      "value": "timestamp"
                     }
                   ],
                   "outputParams": [
