@@ -55,6 +55,26 @@
           {
             "activated": true,
             "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "Log",
+              "inputParams": [
+                {
+                  "key": "message",
+                  "type": "entityKnowledge",
+                  "value": "part"
+                }
+              ],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "9f43e59c-1e88-4abd-9871-a7291a6b6d45",
+            "type": "action"
+          },
+          {
+            "activated": false,
+            "metadata": {
               "label": "Part-00153"
             },
             "properties": {
