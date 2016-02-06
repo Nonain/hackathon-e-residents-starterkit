@@ -63,61 +63,6 @@
               {
                 "activated": true,
                 "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "active": "false"
-                },
-                "children": [
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": "turnoff"
-                    },
-                    "properties": {
-                      "name": "",
-                      "inputParams": [],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "803f878e-7ae7-4fc8-9029-19fa450df8a3",
-                    "type": "action"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": ""
-                    },
-                    "properties": {
-                      "name": "",
-                      "inputParams": [],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "b05b2232-11f1-4da7-850f-e06562d8a89d",
-                    "type": "action"
-                  },
-                  {
-                    "activated": true,
-                    "metadata": {
-                      "label": "warn user"
-                    },
-                    "properties": {
-                      "name": "",
-                      "inputParams": [],
-                      "outputParams": []
-                    },
-                    "children": [],
-                    "id": "6d9ee8e5-4ed2-4fa0-947e-68445c18e51a",
-                    "type": "action"
-                  }
-                ],
-                "id": "b02832da-1071-42c9-ba7f-6bd87748ed80",
-                "type": "priority"
-              },
-              {
-                "activated": true,
-                "metadata": {
                   "label": "watch"
                 },
                 "properties": {
