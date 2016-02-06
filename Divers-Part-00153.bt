@@ -47,6 +47,26 @@
               "label": ""
             },
             "properties": {
+              "name": "Log",
+              "inputParams": [
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "started"
+                }
+              ],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "90e9b64c-4b62-4bd9-9d48-24fb6801087d",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
+              "label": ""
+            },
+            "properties": {
               "name": "Stall",
               "inputParams": [],
               "outputParams": []
@@ -90,26 +110,6 @@
                 "children": [],
                 "id": "8f43e0f1-1f4d-4da1-b956-64d58ca4d48d",
                 "type": "set"
-              },
-              {
-                "activated": true,
-                "metadata": {
-                  "label": ""
-                },
-                "properties": {
-                  "name": "Log",
-                  "inputParams": [
-                    {
-                      "key": "message",
-                      "type": "string",
-                      "value": "started"
-                    }
-                  ],
-                  "outputParams": []
-                },
-                "children": [],
-                "id": "90e9b64c-4b62-4bd9-9d48-24fb6801087d",
-                "type": "action"
               },
               {
                 "activated": true,
