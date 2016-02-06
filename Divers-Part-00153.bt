@@ -22,7 +22,7 @@
               "label": "Part-00153"
             },
             "properties": {
-              "name": "Récup data",
+              "name": "recupData",
               "inputParams": [
                 {
                   "key": "client_id",
@@ -35,6 +35,7 @@
                   "value": "client_secret"
                 },
                 {
+                  "key": "name",
                   "type": "string",
                   "value": "DIVERS-PART-00153"
                 }
