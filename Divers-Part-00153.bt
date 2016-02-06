@@ -19,6 +19,42 @@
           {
             "activated": true,
             "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "IntentGetPartsStream",
+              "inputParams": [
+                {
+                  "key": "client_id",
+                  "type": "entityKnowledge",
+                  "value": "client_id"
+                },
+                {
+                  "key": "client_secret",
+                  "type": "entityKnowledge",
+                  "value": "client_secret"
+                },
+                {
+                  "key": "ref",
+                  "type": "string",
+                  "value": "DIVERS-PART-00153"
+                }
+              ],
+              "outputParams": [
+                {
+                  "key": "result",
+                  "type": "entityKnowledge",
+                  "value": "part"
+                }
+              ]
+            },
+            "children": [],
+            "id": "c8dd9567-6645-4be1-9f5e-fa6022318d47",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
               "label": "Part-00153"
             },
             "properties": {
