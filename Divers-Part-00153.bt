@@ -38,6 +38,16 @@
                   "key": "name",
                   "type": "string",
                   "value": "DIVERS-PART-00153"
+                },
+                {
+                  "key": "stream",
+                  "type": "string",
+                  "value": "c4fb67a1-03b2-41e7-a9eb-5491968bab42"
+                },
+                {
+                  "key": "time",
+                  "type": "string",
+                  "value": ""
                 }
               ],
               "outputParams": [
