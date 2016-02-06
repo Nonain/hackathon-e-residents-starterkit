@@ -19,6 +19,26 @@
           {
             "activated": true,
             "metadata": {
+              "label": ""
+            },
+            "properties": {
+              "name": "Log",
+              "inputParams": [
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "started"
+                }
+              ],
+              "outputParams": []
+            },
+            "children": [],
+            "id": "90e9b64c-4b62-4bd9-9d48-24fb6801087d",
+            "type": "action"
+          },
+          {
+            "activated": true,
+            "metadata": {
               "label": "Somme"
             },
             "properties": {
@@ -39,26 +59,6 @@
             },
             "children": [],
             "id": "6ab111d0-04be-4123-8d58-93d180c4cc83",
-            "type": "action"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {
-              "name": "Log",
-              "inputParams": [
-                {
-                  "key": "message",
-                  "type": "string",
-                  "value": "started"
-                }
-              ],
-              "outputParams": []
-            },
-            "children": [],
-            "id": "90e9b64c-4b62-4bd9-9d48-24fb6801087d",
             "type": "action"
           },
           {
