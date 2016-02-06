@@ -12,13 +12,177 @@
       {
         "activated": true,
         "metadata": {
-          "label": "Recup data"
+          "label": ""
         },
-        "properties": {},
+        "properties": {
+          "active": "false"
+        },
         "children": [
           {
             "activated": true,
             "metadata": {
+              "label": "Recup data"
+            },
+            "properties": {},
+            "children": [
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "Log",
+                  "inputParams": [
+                    {
+                      "key": "message",
+                      "type": "string",
+                      "value": "started"
+                    }
+                  ],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "90e9b64c-4b62-4bd9-9d48-24fb6801087d",
+                "type": "action"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "IntentGetPartsStream",
+                  "inputParams": [
+                    {
+                      "key": "client_id",
+                      "type": "globalKnowledge",
+                      "value": "client_id"
+                    },
+                    {
+                      "key": "client_secret",
+                      "type": "globalKnowledge",
+                      "value": "client_secret"
+                    },
+                    {
+                      "key": "ref",
+                      "type": "string",
+                      "value": "DIVERS-PART-00153"
+                    }
+                  ],
+                  "outputParams": [
+                    {
+                      "key": "result",
+                      "type": "entityKnowledge",
+                      "value": "part"
+                    }
+                  ]
+                },
+                "children": [],
+                "id": "c8dd9567-6645-4be1-9f5e-fa6022318d47",
+                "type": "action"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "Log",
+                  "inputParams": [
+                    {
+                      "key": "message",
+                      "type": "entityKnowledge",
+                      "value": "part"
+                    }
+                  ],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "9f43e59c-1e88-4abd-9871-a7291a6b6d45",
+                "type": "action"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": "Part-00153"
+                },
+                "properties": {
+                  "name": "IntentGetStreamData",
+                  "inputParams": [
+                    {
+                      "key": "client_id",
+                      "type": "globalKnowledge",
+                      "value": "client_id"
+                    },
+                    {
+                      "key": "client_secret",
+                      "type": "globalKnowledge",
+                      "value": "client_secret"
+                    },
+                    {
+                      "key": "stream",
+                      "type": "entityKnowledge",
+                      "value": "part.streams[6]"
+                    },
+                    {
+                      "key": "time",
+                      "type": "globalKnowledge",
+                      "value": "1447289020000"
+                    }
+                  ],
+                  "outputParams": [
+                    {
+                      "key": "data",
+                      "type": "entityKnowledge",
+                      "value": "data"
+                    }
+                  ]
+                },
+                "children": [],
+                "id": "edfbd390-e150-485d-a44d-c2eab60048e7",
+                "type": "action"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "Log",
+                  "inputParams": [
+                    {
+                      "key": "message",
+                      "type": "string",
+                      "value": "data"
+                    }
+                  ],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "c5a918b5-aa28-47ac-8318-995d8dd2b546",
+                "type": "action"
+              },
+              {
+                "activated": true,
+                "metadata": {
+                  "label": ""
+                },
+                "properties": {
+                  "name": "Stall",
+                  "inputParams": [],
+                  "outputParams": []
+                },
+                "children": [],
+                "id": "3836424e-5dd0-4020-ad58-d4823c365d12",
+                "type": "action"
+              }
+            ],
+            "id": "9672f81d-3582-41c0-bd8b-d80be6579932",
+            "type": "sequence"
+          },
+          {
+            "activated": true,
+            "metadata": {
               "label": ""
             },
             "properties": {
@@ -27,130 +191,13 @@
                 {
                   "key": "message",
                   "type": "string",
-                  "value": "started"
+                  "value": "FAILURE"
                 }
               ],
               "outputParams": []
             },
             "children": [],
-            "id": "90e9b64c-4b62-4bd9-9d48-24fb6801087d",
-            "type": "action"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {
-              "name": "IntentGetPartsStream",
-              "inputParams": [
-                {
-                  "key": "client_id",
-                  "type": "globalKnowledge",
-                  "value": "client_id"
-                },
-                {
-                  "key": "client_secret",
-                  "type": "globalKnowledge",
-                  "value": "client_secret"
-                },
-                {
-                  "key": "ref",
-                  "type": "string",
-                  "value": "DIVERS-PART-00153"
-                }
-              ],
-              "outputParams": [
-                {
-                  "key": "result",
-                  "type": "entityKnowledge",
-                  "value": "part"
-                }
-              ]
-            },
-            "children": [],
-            "id": "c8dd9567-6645-4be1-9f5e-fa6022318d47",
-            "type": "action"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {
-              "name": "Log",
-              "inputParams": [
-                {
-                  "key": "message",
-                  "type": "entityKnowledge",
-                  "value": "part"
-                }
-              ],
-              "outputParams": []
-            },
-            "children": [],
-            "id": "9f43e59c-1e88-4abd-9871-a7291a6b6d45",
-            "type": "action"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": "Part-00153"
-            },
-            "properties": {
-              "name": "IntentGetStreamData",
-              "inputParams": [
-                {
-                  "key": "client_id",
-                  "type": "globalKnowledge",
-                  "value": "client_id"
-                },
-                {
-                  "key": "client_secret",
-                  "type": "globalKnowledge",
-                  "value": "client_secret"
-                },
-                {
-                  "key": "stream",
-                  "type": "entityKnowledge",
-                  "value": "part.streams[6]"
-                },
-                {
-                  "key": "time",
-                  "type": "globalKnowledge",
-                  "value": "1447289020000"
-                }
-              ],
-              "outputParams": [
-                {
-                  "key": "data",
-                  "type": "entityKnowledge",
-                  "value": "data"
-                }
-              ]
-            },
-            "children": [],
-            "id": "edfbd390-e150-485d-a44d-c2eab60048e7",
-            "type": "action"
-          },
-          {
-            "activated": true,
-            "metadata": {
-              "label": ""
-            },
-            "properties": {
-              "name": "Log",
-              "inputParams": [
-                {
-                  "key": "message",
-                  "type": "string",
-                  "value": "data"
-                }
-              ],
-              "outputParams": []
-            },
-            "children": [],
-            "id": "c5a918b5-aa28-47ac-8318-995d8dd2b546",
+            "id": "f59515f1-286f-4347-b1c0-4a05f41e40f5",
             "type": "action"
           },
           {
@@ -164,12 +211,12 @@
               "outputParams": []
             },
             "children": [],
-            "id": "3836424e-5dd0-4020-ad58-d4823c365d12",
+            "id": "8227d80c-d1c4-4987-911a-de5c478c95bc",
             "type": "action"
           }
         ],
-        "id": "9672f81d-3582-41c0-bd8b-d80be6579932",
-        "type": "sequence"
+        "id": "05b96096-2775-4457-8ff8-6274b38c24c0",
+        "type": "priority"
       }
     ],
     "id": "0d3008d8-ccb0-4974-b565-5910a2aac12d"
