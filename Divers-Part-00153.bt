@@ -46,8 +46,8 @@
                 },
                 {
                   "key": "time",
-                  "type": "string",
-                  "value": ""
+                  "type": "integer",
+                  "value": "1412114400000"
                 }
               ],
               "outputParams": [
